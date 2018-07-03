@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'docker-compose run --rm api npm install' 
+                sh 'npm install' 
             }
         }
     }
